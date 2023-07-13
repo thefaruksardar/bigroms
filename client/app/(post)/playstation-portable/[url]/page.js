@@ -7,6 +7,22 @@ import Share from "../../components/share";
 import Aside from "../../components/aside";
 import AdBanner from "../../components/adsense";
 
+const getAllPost = async () => {
+  const res = await axios(`${process.env.NEXT_PUBLIC_POST}`);
+
+  return res.data;
+};
+
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const posts = await getAllPost();
+
+  return posts.map((post) => ({
+    url: post.permalink,
+  }));
+}
+
 const fetchPost = async (url) => {
   const res = await axios.get(
     `${process.env.NEXT_PUBLIC_POST}/permalink/${url}`
