@@ -14,16 +14,15 @@ const Header = () => {
       {!isSearch ? (
         <div className=" mx-auto lg:max-w-6xl">
           <nav className={`bg-white border-gray-200  `}>
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3 py-2 md:py-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3 py-2 md:py-3">
               <Link href="/" className="flex items-center">
                 <div className="bg-white px-3 md:max-w-lg mx-auto lg:max-w-4xl">
-                  {/* <Image
-                  src="iframe-generator.svg"
-                  alt="iFrameGenarator Logo"
-                  width={180}
-                  height={100}
-                /> */}
-                  PPSSPP GAME
+                  <Image
+                    src="/bigroms.svg"
+                    alt="bigroms Logo"
+                    width={180}
+                    height={100}
+                  />
                 </div>
               </Link>
               <div className="flex items-center">
@@ -73,30 +72,12 @@ const Header = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://iframetester.net/"
-                        target="_blank"
+                      <Link
+                        href="/playstation-portable"
                         className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                       >
-                        iFrame Tester
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://chmodcalculator.in/"
-                        target="_blank"
-                        className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
-                      >
-                        CHMOD Calculator
-                      </a>
-                    </li>
-                    <li className="hidden md:flex items-center">
-                      <button
-                        className="text-2xl"
-                        onClick={(e) => setIsSearch(!isSearch)}
-                      >
-                        <MdSearch />
-                      </button>
+                        Playstation Portable
+                      </Link>
                     </li>
                   </ul>
                 </nav>

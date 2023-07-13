@@ -73,13 +73,15 @@ const Page = async ({ params: { url } }) => {
                   <div className="w-full md:flex md:flex-col md:gap-1">
                     <Link
                       href={`/playstation-portable/${post.permalink}/download`}
-                      className="bg-blue-500 text-xl w-full text-white py-2 rounded-3xl flex justify-center items-center gap-2 my-1"
+                      className="bg-blue-500 text-xl w-full text-white py-2 rounded-3xl flex justify-center items-center gap-2 my-1 hover:bg-blue-600"
                     >
                       <MdCloudDownload className="text-2xl" /> Download
                     </Link>
                     <Link
-                      href={"/"}
-                      className="bg-white border-2 border-blue-500 text-xl w-full text-blue-500 py-2 rounded-3xl flex justify-center items-center gap-2 my-1"
+                      href={
+                        "https://files.bigmod.io/s/42w3TPcgGK4R3aH/download"
+                      }
+                      className="bg-white border-2 border-blue-500 text-xl w-full text-blue-500 py-2 rounded-3xl flex justify-center items-center gap-2 my-1 hover:border-blue-600 hover:text-blue-600"
                     >
                       <MdGames className="text-2xl" /> Emulator
                     </Link>

@@ -43,7 +43,7 @@ const categoryPost = async (req, res) => {
   const { type } = req.params;
 
   try {
-    const post = await postModel.find({ category: type });
+    const post = await postModel.find({ rom: type });
     res.status(200).json(post);
   } catch (error) {
     res.status(500).json(`Error in Getting Category Posts, Error: ${error}`);

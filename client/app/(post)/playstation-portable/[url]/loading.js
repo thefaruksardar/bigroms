@@ -4,11 +4,11 @@ const Loading = () => {
       <div className="mt-[65px] mb-6 h-screen w-screen -z-10 px-3 flex flex-col md:min-w-[68%] ">
         <div
           role="status"
-          className="space-y-8 animate-pulse mx-auto  w-full bg-gray-50 py-4 my-2 rounded-3xl"
+          className="space-y-8 animate-pulse mx-auto  w-full bg-gray-50 py-4 my-2 rounded-3xl md:flex md:items-center md:px-10"
         >
-          <div className="flex items-center justify-center mx-auto w-48 h-72 bg-gray-300 rounded">
+          <div className="flex items-center justify-center mx-auto w-48 h-72 bg-gray-300 rounded md:flex-col">
             <svg
-              className="w-10 h-10 text-gray-200 dark:text-gray-600"
+              className="w-10 h-10 text-gray-200"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -18,8 +18,8 @@ const Loading = () => {
             </svg>
           </div>
           <div className="w-full">
-            <div className="h-6 bg-gray-200 rounded-full dark:bg-gray-700 w-52 mb-2 mx-auto"></div>
-            <div className="h-6 bg-gray-200 rounded-full dark:bg-gray-700 w-52 mb-2 mx-auto"></div>
+            <div className="h-6 bg-gray-200 rounded-full w-52 mb-2 mx-auto"></div>
+            <div className="h-6 bg-gray-200 rounded-full w-52 mb-2 mx-auto"></div>
           </div>
         </div>
         <div className="space-y-8 px-3 animate-pulse mx-auto  w-full bg-gray-50 py-4 my-2 rounded-3xl">

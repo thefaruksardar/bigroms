@@ -21,8 +21,8 @@ const Download = ({ post }) => {
             <MdCloudDownload className="text-2xl" /> Download ({post.size})
           </Link>
           <Link
-            href={"/"}
-            className="bg-white border-2 border-blue-500 text-xl w-full text-blue-500 py-2 rounded-3xl flex justify-center items-center gap-2 hover:bg-blue-100"
+            href={"https://files.bigmod.io/s/42w3TPcgGK4R3aH/download"}
+            className="bg-white border-2 border-blue-500 text-xl w-full text-blue-500 py-2 rounded-3xl flex justify-center items-center gap-2 hover:text-blue-600 hover:border-blue-600"
           >
             <MdGames className="text-2xl" /> Emulator
           </Link>

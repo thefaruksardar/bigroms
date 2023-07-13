@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="py-5">
           <p className="text-center">
-            {`Copyright © ${new Date().getFullYear()} iFramegenerator.net, All rights reserved.`}
+            {`Copyright © ${new Date().getFullYear()} BIGROMs.com, All rights reserved.`}
           </p>
         </div>
       </div>
